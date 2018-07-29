@@ -8,9 +8,9 @@ namespace TaskList
 {
     public class Task
     {
-        public Menu(double selection)
+        public Menu(string selection)
         {
-            
+            Selection = selection;
         }
         
         public string ListTasks()
@@ -51,5 +51,7 @@ namespace TaskList
 
         }
         public List<List<string>> TaskList { get; set; }
+
+        public string Selection { get; set; }
     }
 }
