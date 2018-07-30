@@ -1,0 +1,6 @@
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\TaskList\bin\Debug\TaskList.dll
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\TaskList\bin\Debug\TaskList.pdb
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\TaskList\obj\Debug\TaskList.csprojAssemblyReference.cache
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\TaskList\obj\Debug\TaskList.csproj.CoreCompileInputs.cache
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\TaskList\obj\Debug\TaskList.dll
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\TaskList\obj\Debug\TaskList.pdb

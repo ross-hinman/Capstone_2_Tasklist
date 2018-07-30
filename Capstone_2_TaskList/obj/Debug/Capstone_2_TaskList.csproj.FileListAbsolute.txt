@@ -1,0 +1,10 @@
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\bin\Debug\Capstone_2_TaskList.exe.config
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\bin\Debug\Capstone_2_TaskList.exe
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\bin\Debug\Capstone_2_TaskList.pdb
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\bin\Debug\TaskList.dll
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\bin\Debug\TaskList.pdb
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\obj\Debug\Capstone_2_TaskList.csprojAssemblyReference.cache
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\obj\Debug\Capstone_2_TaskList.csproj.CoreCompileInputs.cache
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\obj\Debug\Capstone_2_TaskList.csproj.CopyComplete
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\obj\Debug\Capstone_2_TaskList.exe
+C:\Users\Ross Hinman\source\repos\Capstone_2_Tasklist\Capstone_2_TaskList\obj\Debug\Capstone_2_TaskList.pdb

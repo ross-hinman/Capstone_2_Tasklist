@@ -4,54 +4,90 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskList
+namespace TaskList.Library
 {
-    public class Task
+    public class TasksList : List<Task>
     {
-        public Menu(string selection)
-        {
-            Selection = selection;
-        }
-        
-        public string ListTasks()
-        {
-            Console.WriteLine($"{0, -10} {1, -15} {2, -20} {3, -30}", "Done?","Due Date", "Team Member", "Description");
-            for (int i = 0; i < List.Capacity; i++)
-            {
 
-            }
 
-            Console.WriteLine($"{0,-10} {1,-15} {2,-20} {3,-30}", List[i], List[1], List[2], List[3]);
-        }
         public void AddTask()
         {
-            List<bool> done = new List<bool>();
-            List<DateTime> dueDate = new List<DateTime>();
-            List<string> teamMember = new List<string>();
-            List<string> description = new List<string>();
-            TaskList.Add
-                (
-                done,
-                dueDate,
-                teamMember,
-                description
-                );
-                
+            bool done = false;
+            Console.WriteLine("Please enter a due date: (dd/mm/yyyy)");
+            DateTime dueDate =DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter a team member name: ");
+            string teamMember = Console.ReadLine();
+            Console.WriteLine("Please enter a description:");
+            string description = Console.ReadLine();
+            this.Add(new Task(done, dueDate, teamMember, description));
         }
-        public void DeletTask()
-        {
 
+        public void ListTasks()
+        {
+            Console.WriteLine("{0,-10} {1,-15} {2,-20} {3,-30}", "Done?", "Due Date", "Team Member", "Description");
+            try
+            {
+                for (int i = 0; i < this.Count; i++)
+                {                  
+                    Console.WriteLine($"{0,-10}{1,-15}{2,-20}{3,-30}", this[i], this[i], this[i], this[i]);
+                }
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("There are currently no tasks.");
+            }
         }
+
         public void MarkComplete()
         {
-
+            throw new NotImplementedException();
         }
-        public void Quit()
+
+        public void DeletTask()
         {
-
+            Console.WriteLine("Enter a number of a task to be deleted:");
+            int choice = int.Parse(Console.ReadLine());
+            for (int i = 0; i < Count; i++)
+            {
+                if (choice == (i + 1))
+                {
+                    Console.WriteLine("Are you sure you want to delete this? (y/n)");
+                    Console.WriteLine(this[i]);
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "y")
+                    {
+                        this.Remove(this[i]);
+                    }
+                    else if (answer == "n")
+                    {
+                        break;
+                    }
+                }
+            }
         }
-        public List<List<string>> TaskList { get; set; }
+        public void MarkComplete(List<bool> Done)
+        {
+            Console.Write("Please enter a task number to be marked complete: ");
+            int taskChoice = int.Parse(Console.ReadLine());
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (taskChoice == (i + 1))
+                {
+                    Console.WriteLine("Are you sure you want to mark this task Complete? (Y/N)");
 
-        public string Selection { get; set; }
+
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "y")
+                    {
+                        Done[1] = true;
+                    }
+                    else if (answer == "n")
+                    {
+                        break;
+                    }
+                }
+            }
+        }
     }
-}
+}   
+
